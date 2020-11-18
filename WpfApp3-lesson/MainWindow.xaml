@@ -6,7 +6,128 @@
         xmlns:local="clr-namespace:WpfApp3_lesson"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <DockPanel LastChildFill="False" Background="Black" DockPanel.Dock="Top">
+            <Button DockPanel.Dock="Left" Background="Blue" Width="20"  Content= "()"></Button>
+            <Label DockPanel.Dock="Left" Width="60" Content="Office365" Foreground="DarkGray"></Label>
+            <Label DockPanel.Dock="Left" Width="70" Content="SharePoint" Foreground="DarkGray"></Label>
+            <Label DockPanel.Dock="Right" Background="Brown" Width="30" Margin="3,0,0,0" Content="*" Foreground="DarkGray"></Label>
+            <Label DockPanel.Dock="Right" Background="Brown" Width="30" Content="@"  Margin="3,0,0,0" Foreground="DarkGray"></Label>
+            <Label DockPanel.Dock="Right" Background="Brown" Width="30" Content="//" Margin="3,0,0,0" Foreground="DarkGray"></Label>
+            <Label DockPanel.Dock="Right"  Background="Brown" Width="30" Content="$" Margin="3,0,0,0" Foreground="DarkGray"></Label>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Top" LastChildFill="False" Background="Blue" Height="50">
+            <Button DockPanel.Dock="Left"  Margin="10,0,0,0" Width="45" Height="35"  Foreground="Black" Content="SS"></Button>
+            <Grid DockPanel.Dock="Left" Margin="10,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                  
+            </Grid>
+        </DockPanel>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150*"/>
+                <RowDefinition Height="150*"/>
+                <RowDefinition Height="150*"/>
+                <RowDefinition Height="400*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Border Background="Black" Grid.ColumnSpan="2"></Border>
+            <Border Background="White" Grid.Column="3">
+                <DockPanel>
+                    <DockPanel DockPanel.Dock="Top" Background="White" LastChildFill="False" Height="20">
+                        <Button DockPanel.Dock="Left" Margin="20,0,0,0" Width="30" Height="20" Background="Blue" Foreground="White" FontStyle="Italic" Content="New">
+                        </Button>
+                    </DockPanel>
+                    <DockPanel DockPanel.Dock="Top" Background="White" LastChildFill="False" Height="40">
+                        <Label DockPanel.Dock="Left" Margin="20,10,20,5" Background="White" Width="300"  FontStyle="Italic" Content="Realizar una impresion">
+                        </Label>
+                    </DockPanel >
+                    <DockPanel Background="White" LastChildFill="False">
+                        <Label DockPanel.Dock="Left" Margin="20,10,20,5"  Background="White" Width="300" Foreground="Blue" Content="________________________________________________________________________________________________________________________________-">
+                        </Label>
+                    </DockPanel>
+                </DockPanel>
+
+            </Border>
+            <Border Background="Black" Grid.Row="1" Grid.ColumnSpan="3"></Border>
+            <Border Grid.Row="1" Background="White" Grid.Column="0">
+
+                <DockPanel>
+                    <DockPanel DockPanel.Dock="Top" Background="White" LastChildFill="False" Height="20">
+                        <Button DockPanel.Dock="Left" Margin="20,0,0,0" Width="30" Height="20" Background="Blue" Foreground="White" FontStyle="Italic" Content="New">
+                        </Button>
+                    </DockPanel>
+                    <DockPanel DockPanel.Dock="Top" Background="White" LastChildFill="False" Height="40">
+                        <Label DockPanel.Dock="Left" Margin="20,10,20,5" Background="White" Width="300"  FontStyle="Italic" Content="Realizar una impresion">
+                        </Label>
+                    </DockPanel >
+                    <DockPanel Background="White" LastChildFill="False">
+                        <Label DockPanel.Dock="Left" Margin="20,10,20,5"  Background="White" Width="300" Foreground="Blue" Content="________________________________________________________________________________________________________________________________-">
+                        </Label>
+                    </DockPanel>
+                </DockPanel>
+
+            </Border>
+            <Border Background="Black" Grid.Row="2" Grid.ColumnSpan="2"></Border>
+            <Border Grid.Row="2" Grid.Column="3" Background="White">
+
+                <DockPanel>
+                    <DockPanel DockPanel.Dock="Top" Background="White" LastChildFill="False" Height="20">
+                        <Button DockPanel.Dock="Left" Margin="20,0,0,0" Width="30" Height="20" Background="Blue" Foreground="White" FontStyle="Italic" Content="New">
+                        </Button>
+                    </DockPanel>
+                    <DockPanel DockPanel.Dock="Top" Background="White" LastChildFill="False" Height="40">
+                        <Label DockPanel.Dock="Left" Margin="20,10,20,5" Background="White" Width="300"  FontStyle="Italic" Content="Realizar una impresion">
+                        </Label>
+                    </DockPanel >
+                    <DockPanel Background="White" LastChildFill="False">
+                        <Label DockPanel.Dock="Left" Margin="20,10,20,5"  Background="White" Width="300" Foreground="Blue" Content="________________________________________________________________________________________________________________________________-">
+                        </Label>
+                    </DockPanel>
+                </DockPanel>
+                
+            </Border>
+
+            <UniformGrid   Grid.Row="3" Grid.ColumnSpan="3" Columns="4" Rows="3">
+                <Label Background="White" >
+
+                    <Label Width="80" Height="50" Content="Image Galery" Margin="10,11,0,0">
+                        </Label>
+                </Label>
+                <Label Background="White">
+                    </Label>
+                <Label Background="White">
+                </Label>
+                <Label Background="White">
+                </Label>
+                <Label Background="Aqua" Margin="20,5,0,0">
+                </Label>
+                <Label Background="Black" Margin="20,5,0,0">
+                </Label>
+                <Label Background="Khaki" Margin="20,5,0,0">
+                </Label>
+                <Label Background="Orange" Margin="20,5,0,0"></Label>
+                <Label Background="Orange" Margin="20,5,0,0"></Label>
+                <Label Background="Khaki" Margin="20,5,0,0"></Label>
+                <Label Background="Black" Margin="20,5,0,0"></Label>
+                <Label Background="Aqua" Margin="20,5,0,0"></Label>
+
+            </UniformGrid>
+
+
+        </Grid>
+
+              
+    </DockPanel>
+   
+
+
 </Window>
